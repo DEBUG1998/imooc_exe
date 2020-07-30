@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>捕获全局异常</title>
+</head>
+<body>
+<!--mv.addObject("exception",e);
+        mv.addObject("url",request.getRequestURI());-->
+<h1 style="color: red">发生错误：</h1>
+<div th:text="${exception}"></div>
+<div th:text="${url}"></div>
+</body>
+</html>
